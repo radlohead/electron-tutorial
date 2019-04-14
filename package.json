@@ -1,0 +1,34 @@
+{
+    "build": {
+        "productName": "HelloElectron",
+        "appId": "com.electron.hello",
+        "asar": true,
+        "protocols": {
+            "name": "helloElectron",
+            "schemes": [
+                "helloelectron"
+            ]
+        },
+        "mac": {
+            "target": [
+                "default"
+            ],
+            "icon": "./resources/installer/Icon.icns"
+        }
+    },
+    "name": "hello-world",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "build": "build --mac"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "electron": "^4.1.4",
+        "electron-builder": "^20.39.0"
+    }
+}
